@@ -3,7 +3,7 @@
 set -o errexit
 
 pip install -r requirements.txt
-
+pip install django-cors-headers
 python manage.py collectstatic --no-input
 python manage.py makemigrations
 python manage.py migrate
