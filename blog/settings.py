@@ -59,7 +59,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'blog.urls'
 
 CORS_ORIGIN_ALLOW_ALL = True
-CORS_ORIGIN_WHITELIST = ["http://localhost:3000",    "https://finalporty.vercel.app/blog",]
+CORS_ORIGIN_WHITELIST = ["http://localhost:3000",    "https://finalporty.vercel.app",]
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
