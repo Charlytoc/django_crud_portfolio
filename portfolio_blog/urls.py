@@ -1,5 +1,5 @@
 from rest_framework import routers
-from .api import PostViewSet
+from .api import PostViewSet, CommentsViewSet
 from .views import RegisterAPI, LoginAPI
 from django.urls import path
 
@@ -9,6 +9,7 @@ from knox import views as knox_views
 router = routers.DefaultRouter()
 
 router.register('api/blog', PostViewSet, 'posts')
+router.register('api/comment', CommentsViewSet, 'comments')
 
 urlpatterns = router.urls
 
