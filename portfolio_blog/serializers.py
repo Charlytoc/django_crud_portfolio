@@ -38,8 +38,8 @@ class CommentsSerializer(serializers.ModelSerializer):
 
 
 
-class CustomAuthTokenSerializer(AuthTokenSerializer):
-    def create(self, validated_data):
-        user = self.context['request'].user
-        validated_data['user_id'] = user.id
-        return super().create(validated_data)
+# class CustomAuthTokenSerializer(AuthTokenSerializer):
+#     def create(self, validated_data):
+#         user = self.context['request'].user
+#         validated_data['user_id'] = user.id
+#         return super().create(validated_data)
